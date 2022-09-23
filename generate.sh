@@ -11,7 +11,7 @@ echo "<!DOCTYPE html>
 <script type=\"text/javascript\" src=\"https://s3.tradingview.com/tv.js\">
 </script>"
 
-while read pair; do
+while read -r pair; do
     echo "<!-- TradingView Widget BEGIN -->
         <div class=\"tradingview-widget-container\">
           <div id=\"tradingview_$pair\"></div>
@@ -43,5 +43,5 @@ while read pair; do
         <hr>
         <!-- TradingView Widget END -->"
 
-done < $1
-echo -n "</html>"
+done < "$1"
+echo "</html>"
