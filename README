@@ -10,4 +10,4 @@ How to use
   - generator.sh pairs.txt > page.html
 
  * Python Flask webserver to serve the page
-  - python3 app.py
+  - python3 webapp/app.py
