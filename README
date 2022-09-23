@@ -1,0 +1,13 @@
+Crypto dashboard
+================
+
+Simple crypto dashboard using tradingview widgets of selected pairs on KuCoin
+
+How to use
+==========
+
+ * Simply use generator.sh script to generate static page
+  - generator.sh pairs.txt > page.html
+
+ * Python Flask webserver to serve the page
+  - python3 app.py
