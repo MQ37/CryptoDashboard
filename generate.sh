@@ -7,9 +7,22 @@ fi
 
 echo "<!DOCTYPE html>
 <html>
+<head>
+    <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .tradingview-widget-container {
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
 <h1>Crypto Dashboard</h1>
 <script type=\"text/javascript\" src=\"https://s3.tradingview.com/tv.js\">
-</script>"
+</script>
+<div class='flex-container'>"
 
 while read -r pair; do
     echo "<!-- TradingView Widget BEGIN -->
@@ -39,9 +52,7 @@ while read -r pair; do
           );
           </script>
         </div>
-
-        <hr>
         <!-- TradingView Widget END -->"
 
 done < "$1"
-echo "</html>"
+echo "</div></body></html>"
