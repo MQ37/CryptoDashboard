@@ -45,7 +45,8 @@ while read -r pair; do
           \"allow_symbol_change\": true,
           \"studies\": [
             \"MACD@tv-basicstudies\",
-            \"RSI@tv-basicstudies\"
+            \"RSI@tv-basicstudies\",
+            \"StochasticRSI@tv-basicstudies\",
           ],
           \"container_id\": \"tradingview_$pair\"
         }
